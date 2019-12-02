@@ -69,6 +69,7 @@ header {
   display: block;
 }
 
+
 .jumbo {
   position: relative;
   height: 420px;
@@ -118,14 +119,18 @@ header {
 .bikes a {
   display: block;
   font-size: 1.8em;
-  text-decoration: none;
   color: #6DACDE;
 }
-.bikes a::after{
+.bikes a {
+  text-decoration: none;
+}
+.bikes a::after,
+.main_third_text a::after{
   content: ">";
   margin-left: 10px;
 }
-a:hover {
+.bikes a:hover,
+.main_third_text a:hover {
   text-decoration: underline;
 }
 .main_second {
@@ -133,6 +138,7 @@ a:hover {
 }
 .background_main{
   height: 500px;
+  margin-top: 100px;
   background-image: url(../img/HelbizBanner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -157,6 +163,33 @@ a:hover {
 .how_text h3,
 .how_text p {
   font-size: 2em;
+}
+.main_third .container_1400 {
+  height: 400px;
+  background-image: url(../img/ScooterHelbiz-2400.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main_third_text {
+  width: 60%;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  margin-top: calc((400px - 221px) / 2);
+}
+.main_third_text h2 {
+  font-size: 4em;
+  line-height: 50px;
+  margin-bottom: 20px;
+}
+.main_third_text p {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+.main_third_text a {
+  color: white;
+  font-size: 2em;
+  text-decoration: none;
 }
 
 /* MEDIUM MEDIAQUERY */
@@ -196,9 +229,16 @@ a:hover {
   .how_text {
     display: none
   }
-
+  .main_second {
+    margin-bottom: 290px;
+  }
+  .main_third_text {
+    width: 80%;
+    text-shadow: 1px 1px black;
+  }
 
 }
+
 /* EXTRA SMALL MEDIAQUERY */
 @media screen and (max-width: 768px) {
   body {
@@ -233,5 +273,12 @@ a:hover {
   }
   .how_text {
     display: none
+  }
+  .main_second {
+    margin-bottom: 290px;
+  }
+  .main_third_text {
+    width: 90%;
+    text-shadow: 1px 1px black;
   }
 }
