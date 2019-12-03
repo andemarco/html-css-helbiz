@@ -28,8 +28,8 @@ body {
   font-size: 1.1em;
   font-weight: bold;
 }
-.padding_40 {
-  padding: 40px;
+.padding_20 {
+  padding: 20px;
 }
 /* HEADER */
 header {
@@ -108,8 +108,9 @@ header {
 .bike_ph {
   height: 40em;
 }
-.bikes div {
+.box_grey {
   background-color: #FAFAFA;
+  padding: 10px;
 }
 .bikes h3 {
   font-size: 2em;
@@ -124,19 +125,21 @@ header {
 .bikes a {
   text-decoration: none;
 }
+.bikes a span:hover,
+.main_third_text a span:hover {
+  text-decoration: underline;
+}
 .bikes a::after,
 .main_third_text a::after{
   content: ">";
   margin-left: 10px;
 }
-.bikes a:hover,
-.main_third_text a:hover {
-  text-decoration: underline;
+.bikes a::after:hover,
+.main_third_text a::after:hover{
+  text-decoration: none;
 }
 .main_second {
   position: relative;
-}
-.background_main{
   height: 500px;
   margin-top: 100px;
   background-image: url(../img/HelbizBanner.jpg);
@@ -148,7 +151,7 @@ header {
   position: absolute;
   left: 50%;
   top: 35%;
-  transform: translate(-50% , 0);
+  transform: translateX(-50%);
 }
 .iphone img {
   height: 600px;
@@ -164,7 +167,7 @@ header {
 .how_text p {
   font-size: 2em;
 }
-.main_third .container_1400 {
+.main_third {
   height: 400px;
   background-image: url(../img/ScooterHelbiz-2400.jpg);
   background-size: cover;
